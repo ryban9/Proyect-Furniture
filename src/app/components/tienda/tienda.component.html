@@ -1,0 +1,37 @@
+<a class="boton_transicion">Transiciones</a>
+
+<div class="clearfix">
+
+</div>
+
+<div class="caja_animada">
+
+</div>
+
+
+
+
+<h4>Utilizar jquery dentro de angular</h4>
+<button id="botonjq">Mostrar textos</button>
+<p id="textojq" class=" alert alert-warning">
+    Este es un ejemplo de jquery
+</p>
+<hr/> Padre:
+<h1>{{titulo}}</h1>
+
+Nombre del parque:
+<input type="text" [(ngModel)]="nombreDelParque" (keyup)="mostrarNombre()" />
+<br/>
+<div *ngIf="miParque">
+    <h4>Datos de mi parque</h4>
+    <ol>
+        <li>{{miParque.nombre}}</li>
+        <li>{{miParque.metros}}</li>
+        <li>{{miParque.veguetacion}}</li>
+        <li>{{miParque.abierto}}</li>
+    </ol>
+</div>
+<p *ngIf="nombreDelParque">
+    Hijo:
+    <parque [nombre]="nombreDelParque" [metros_cuadrados]="567" (pasameLosDatos)="verDatosParque($event)"></parque>
+</p>

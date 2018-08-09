@@ -1,0 +1,61 @@
+<div class="navigation col-lg-12">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a [routerLink]="['/home']" class="navbar-brand">{{title}}</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li>
+                    <a [routerLink]="['/home']" [routerLinkActive]="['active']">
+                        <span class="glyphicon glyphicon-home"></span> Inicio
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/user']" [routerLinkActive]="['active']">
+                        <span class="glyphicon glyphicon-user"></span> Usuario
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/user_Type']" [routerLinkActive]="['active']">
+                        <span class="glyphicon glyphicon-object-align-left"></span> Tipo De Usuario
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/furniture']" [routerLinkActive]="['active']">
+                        <span class="glyphicon glyphicon-hdd"></span> Muebles
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/furniture_Type']" [routerLinkActive]="['active']">
+                        <span class="glyphicon glyphicon-object-align-right"></span> Tipo De Mueble
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/material']" [routerLinkActive]="['active']">
+                        <span class="glyphicon glyphicon-tree-deciduous"></span> Material
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/finished']" [routerLinkActive]="['active']">
+                        <span class="glyphicon glyphicon-briefcase"></span> Acabado
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/tienda']" [routerLinkActive]="['active']">
+                        <span class="glyphicon glyphicon-shopping-cart"></span> Tienda
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/contact']" [routerLinkActive]="['active']">
+                        <span class="glyphicon glyphicon-earphone"></span> Contacto
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="col-lg-11">
+    <router-outlet></router-outlet>
+</div>
